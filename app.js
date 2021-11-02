@@ -42,7 +42,6 @@ displayYear.innerHTML = ` ${year}`;
 let form = document.querySelector("#search-form");
 
 function describeWeather(response) {
-  console.log(response.data.wind.speed);
   let description = document.querySelector(`.describe-me`);
   description.innerHTML = response.data.weather[0].description;
   let humidity = document.querySelector(`#humidity`);
